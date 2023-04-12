@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'fff_tusjbold';
+    src:  url('../font/FFF_Tusj-webfont.woff') format('woff2'),
+}
+
+body {
+    font-family: 'fff_tusjbold';   
+    font: 18px/36px 'fff_tusjbold',arial;
+    background-color: #f5f5f5;
+    overflow: scroll;
+}
+
+
+div.banner {
+    width: 100%;
+    height: 428px;
+    background-color: black;
+    box-sizing: border-box;
+    padding-top: 30px ;
+    position: relative;
+    z-index: 99999;
+}
+
+div.banner h1 {
+    color: #fffafa;
+    font-size: 80px;
+    font-weight: 800;
+    padding-top: 90px;
+    text-align: center;
+    margin-left: -4%;
+
+}
+
+div.banner a.pembuat{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 31%;
+    margin-top: 20px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+div.banner a.pembuat:hover {
+    text-decoration: underline;
+}
+
+div.banner p.keterangan{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 31%;
+    margin-top: 3px;
+    text-align: justify;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    
+}
+
+div.wa {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(255, 251, 251);
+    margin: 10px 31%;
+    overflow: hidden;
+    border-radius: 2%;
+}
+div.wa img {
+    padding: 10px;
+    padding-left: 75px;
+}
+
+div.wa a {
+    display: inline-block;
+    position: relative;
+    top: -18px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.wa:hover {
+    opacity: .6;
+    cursor: pointer;
+
+}
+
+div.wa:hover a {
+    text-decoration: underline;
+}
+
+div.sideLeft  {
+    width: 400px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    padding-left: 200px;
+    padding-top: 80px;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    float: left;
+}
+
+div.sideLeft ul {
+    border-right: 5px solid rgba(223, 223, 223, 0.9);
+    
+}
+
+div.sideLeft ul li {
+    margin-left: -20px;
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.9);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
+    margin-top: 5px;
+
+    
+
+}
+
+div.sideLeft ul a {
+    padding: 10px;
+    border-radius: 10%;
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.9);
+}
+
+div.sideLeft a:hover {
+    background-color: rgba(128, 128, 128, 0.9);
+    color: black;
+    text-decoration: underline;
+}
+
+div.rightSide{
+    box-sizing: border-box;
+    margin-left: 30px;
+    width: 900px;
+    height: auto;
+    display: inline-block;
+    text-align: justify;
+    padding: 40px;
+    padding-left: 30px;
+}
+
+.judul {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.subJudul{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.rightSide img {
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 8%;
+    box-sizing: border-box;
+}
+
+div.rightSide img.thumbAwalan {
+    margin-left: 0px;
+}
+
+div.rightSide a:hover img {
+    box-shadow: 0px 0px 10px 1px red;
+}
+
+div.rightSide h2.dua {
+    margin-top: 50px;
+    
+}
+
+div.images{
+    border-bottom: 3px solid rgba(128, 128, 128, 0.6) ;
+}
+
+div.overlay {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    z-index: 999999999;
+    text-align: center;
+    line-height: 700px;
+    overflow: hidden;
+    transition: .8s;
+}
+
+div.overlay img{
+    width: 30%;
+    height: 40%;
+    border: 2px solid white;
+}
+
+.overlay:target  {
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+}
+
+div.overlay a.sebelum, a.selanjut {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    margin: 50px;
+    border-radius: 10px;
+
+}
+
+div.overlay a.sebelum {
+    height: auto;
+    top: -150px;
+    line-height: 100px;
+    
+}
+
+div.overlay a.selanjut {
+    height: auto;
+    top: -150px;
+    line-height: 100px;
+    
+}
+
+div.overlay a.selanjut:hover{
+    border: 3px solid white;
+}
+
+div.overlay a.sebelum:hover{
+    border: 3px solid white;
+}
+
+div.overlay a.tutup {
+    width: auto;
+    height: auto;
+
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    color: white;
+    top: -250px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: .8s;
+}
+
+div.overlay a.tutup:hover {
+    background-color: white;
+    border: 5px solid rgba(70, 70, 70, 0.9);
+    color: black;
+
+}
